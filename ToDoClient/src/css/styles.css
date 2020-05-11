@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#new label {
+    display: inline-block;
+    width: 120px;
+}
+
+#new input {
+    width: 220px;
+}
+
+.task {
+    border: rgb(55, 55, 55) 4px solid;
+    margin: 4px;
+    width: 90vw;
+    max-width: 350px;
+}
+
+.complete {
+    background-color: seagreen;
+}
+
+.taskCompleted,
+.taskDelete {
+    display: inline-block;
+}
+
+.taskName {
+    background-color: rgb(141, 141, 141);
+    font-weight: bold;
+    font-size: 1.4em;
+}
