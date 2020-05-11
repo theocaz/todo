@@ -24,6 +24,8 @@ namespace TodoApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TodoItem>>> GetTodoItems()
         {
+            IQueryable<TodoItem> todoItemQuery =
+            (from tdTable in _context.TodoItems orderby tdTable.Deadline select tdTable);
             return await _context.TodoItems.ToListAsync();
         }
 
